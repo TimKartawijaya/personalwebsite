@@ -1,0 +1,54 @@
+p {
+  font-family: 'Lato',sans-serif;
+  padding:50px;
+}
+
+.nav a{
+  font-family: 'Raleway',sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+
+.nav a:hover{
+  color:orange;
+}
+
+.active{
+  color: orange !important;
+
+}
+
+.masthead h1{
+  color: white;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  font-size:60px;
+}
+
+.masthead p{
+  color: white;
+  font-family: 'Raleway',sans-serif;
+  font-size:20px;
+  padding-top:5px;
+}
+
+.masthead em{
+  color:orange;
+  font-style:normal;
+}
+
+.masthead{
+  position: relative;
+  background-color: #343a40;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),url("../images/chicago.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 19rem;
+  padding-bottom: 15rem;
+}
