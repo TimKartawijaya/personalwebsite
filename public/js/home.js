@@ -24,7 +24,7 @@ function toggleActive(id){
 }
 $(document).scroll(function(){
     var scrollPos = $(document).scrollTop();
-    if (scrollPos >= homeLocation && scrollPos < aboutmeLocation){
+    if (scrollPos < aboutmeLocation){
         toggleActive('#nav-home');
     } else if (scrollPos >= aboutmeLocation && scrollPos < projectsLocation){
         toggleActive('#nav-about');
@@ -32,7 +32,9 @@ $(document).scroll(function(){
         toggleActive('#nav-projects');
     } else if (scrollPos >= resumeLocation && scrollPos < contactLocation){
         toggleActive('#nav-resume');
-    } else {
-        toggleActive('#contact');
+    }
+
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        toggleActive('#nav-contact');
     }
 });
