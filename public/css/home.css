@@ -136,10 +136,21 @@ nav {
 
 }
 
+/* Contacts */
 .contact{
+  color:white;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
   background-color: gray;
 }
 
+.contact h1{
+  padding: 10px;
+  text-align: 
+}
+
+/* Footer */
 .footer{
   background-color: rgb(43, 43, 43);
   display:grid;
