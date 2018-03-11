@@ -22,6 +22,7 @@ function toggleActive(id){
     $(id).css('color','orange');
     $(id).siblings().css('color','white');
 }
+
 $(document).scroll(function(){
     var scrollPos = $(document).scrollTop();
     if (scrollPos < aboutmeLocation){
@@ -36,7 +37,8 @@ $(document).scroll(function(){
     //     toggleActive('#nav-resume');
     // }
 
-    // if($(window).scrollTop() + $(window).height() == $(document).height()) {
-    //     toggleActive('#nav-contact');
-    // }
+    //if reach bottom toggle the very top
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        toggleActive('#nav-projects');
+    }
 });

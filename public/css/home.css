@@ -7,6 +7,7 @@ p {
 /* Navigation Styles*/
 nav {
   /* height:50px; */
+  /* width:100%; */
   display: flex;
   padding:5px;
   justify-content: center;
@@ -136,6 +137,11 @@ em{
 .projects h1{
   padding:60px;
   color:orange;
+  text-align:center;
+}
+
+.projects h5{
+  color:white;
   text-align:center;
 }
 
