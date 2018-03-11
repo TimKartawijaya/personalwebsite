@@ -14,8 +14,8 @@ $('a[href^="#"]').on('click', function(event) {
 var homeLocation = $('#home').offset().top-50;
 var aboutmeLocation = $('#aboutme').offset().top-50;
 var projectsLocation = $('#projects').offset().top-50;
-var resumeLocation = $('#resume').offset().top-50;
-var contactLocation = $('#contact').offset().top-50;
+// var resumeLocation = $('#resume').offset().top-50;
+// var contactLocation = $('#contact').offset().top-50;
 
 //function to activate the link pressed and deactive all siblings
 function toggleActive(id){
@@ -28,13 +28,15 @@ $(document).scroll(function(){
         toggleActive('#nav-home');
     } else if (scrollPos >= aboutmeLocation && scrollPos < projectsLocation){
         toggleActive('#nav-about');
-    } else if (scrollPos >= projectsLocation && scrollPos < resumeLocation){
+    } else {
         toggleActive('#nav-projects');
-    } else if (scrollPos >= resumeLocation && scrollPos < contactLocation){
-        toggleActive('#nav-resume');
-    }
+    } 
+    // if (scrollPos >= projectsLocation && scrollPos < resumeLocation)
+    // } else if (scrollPos >= resumeLocation && scrollPos < contactLocation){
+    //     toggleActive('#nav-resume');
+    // }
 
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-        toggleActive('#nav-contact');
-    }
+    // if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    //     toggleActive('#nav-contact');
+    // }
 });

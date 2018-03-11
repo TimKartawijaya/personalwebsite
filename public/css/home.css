@@ -1,6 +1,7 @@
 p {
   font-family: 'Lato',sans-serif;
   padding:50px;
+
 }
 
 /* Navigation Styles*/
@@ -29,12 +30,12 @@ nav {
 .nav a:hover{
   color:orange;
 }
-
+/* 800px 500px 300px */
 /* Super-parent CSS grid */
 .container{
   display:grid;
   grid-template-columns:1fr;
-  grid-template-rows:800px 470px 500px 500px 400px 120px;
+  grid-template-rows:800px 470px 600px 150px;
   margin-right:0px;
   margin-left:0px;
   max-width:100%;
@@ -78,7 +79,7 @@ nav {
   
 }
 
-.masthead em{
+em{
   color:orange;
   font-style:normal;
 }
@@ -115,8 +116,6 @@ nav {
 .about img {
   border-radius:5px;
   width:250px;
-  border:white;
-  border-width: 1px;
   
 }
 
@@ -128,9 +127,165 @@ nav {
 
 /* Project page */
 .projects {
-  background-color:orange;
+  background-color:rgb(68, 68, 68);
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
 }
 
+.projects h1{
+  padding:60px;
+  color:orange;
+  text-align:center;
+}
+
+.project-items{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr; 
+  grid-gap:20px;
+
+  
+}
+/* 
+.project-items > div{
+  display:flex;
+  justify-content: center;
+  align-content:center;
+} */
+
+.container-project{
+  position: relative;
+  
+}
+
+.container-project img{
+  width:375px;
+  height:300px;
+}
+
+.image {
+opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.caption {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.container-project:hover img{
+opacity: 0.3;
+}
+
+.container-project:hover .caption {
+opacity: 1;
+}
+
+.container-project .content-overlay {
+  background: rgba(48, 48, 48, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.container-project:hover .content-overlay{
+  opacity:1;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.container-project:hover .text{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.text h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  /* margin-bottom: 0.5em; */
+  text-transform: uppercase;
+}
+
+.text h6{
+  color: orange;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  /* margin-bottom: 0.5em; */
+  text-transform: uppercase;
+}
+
+.text p{
+  padding:0;
+  color: #fff;
+  font-size: 0.8em;
+}
+/* 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  align-content:center;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 1.2vw;
+  height: 40vw;
+}
+
+.card img {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+  border-bottom: 1px solid grey;
+  
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor:pointer;
+} */
+
+/* .container-card {
+  padding-top:2vw;
+}
+
+.container-card p {
+text-align:center;
+padding-top:0vw;
+} */
 /* Resume page*/
 .resume{
 
@@ -140,14 +295,18 @@ nav {
 .contact{
   color:white;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 100px 70px 30px;
   justify-content: center;
   background-color: gray;
+  text-align:center;
 }
 
 .contact h1{
-  padding: 10px;
-  text-align: 
+  padding-top: 50px;
+}
+
+.contact h4{
+  padding-top:16px;
 }
 
 /* Footer */
