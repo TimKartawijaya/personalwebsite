@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tim Kartawijaya</title>
+  <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,6 +26,7 @@
     <a class="nav-link" id="nav-home" href="#home">Home</a>
     <a class="nav-link" id="nav-about" href="#aboutme">About Me</a>
     <a class="nav-link" id="nav-projects" href="#projects">Projects</a>
+    <a class="nav-link" href="https://medium.com/timtech">Blog</a>
     <!-- <a class="nav-link" id="nav-resume" href="#resume">Resume</a> -->
     <!-- <a class="nav-link" id="nav-contact" href="#contact">Contact</a> -->
   </div>
@@ -32,39 +34,40 @@
 
 <body>
   <!-- Most Outer Container -->
-  <div class="container" id="home">
+  <div class="container-fluid" id="home">
 
-    
-    <!-- Header -->
-    <div class="masthead">
-      <!-- Content within the Masthead -->
-      <div class="text-center">
-        <!-- Text within masthead -->
-        <h1>Hello, I'm Tim Kartawijaya.</h1>
-        <p>I'm a developer with a passion in
-          <em>Web Development</em> and
-          <em>Data Science</em>.
-          <br>Let's get connected!
-        </p>
+    <div class="row">
+      <!-- Header -->
+      <div class="masthead">
+        <!-- Content within the Masthead -->
+        <div class="text-center">
+          <!-- Text within masthead -->
+          <h1>Hello, I'm Tim Kartawijaya.</h1>
+          <p>I'm an aspiring
+            <em>Data Scientist</em> with a love for
+            <em>Web Development</em>.
+            <br>Let's get connected!
+          </p>
 
-        <!-- Link buttons -->
-        <div class="container-link-flex">
-          <div>
-            <a href="https://www.linkedin.com/in/tim-kartawijaya-141841117/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/TimKartawijaya">
-              <i class="fab fa-github"></i>
-            </a>
+          <!-- Link buttons -->
+          <div class="icon-link">
+            <div>
+              <a href="https://www.linkedin.com/in/tim-kartawijaya-141841117/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/TimKartawijaya">
+                <i class="fab fa-github"></i>
+              </a>
 
-          </div>
-          <div>
-            <a href="mailto:tim.kartawijaya@gmail.com">
-              <i class="fas fa-envelope"></i>
-            </a>
+            </div>
+            <div>
+              <a href="mailto:tim.kartawijaya@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
 
+            </div>
           </div>
         </div>
       </div>
@@ -73,120 +76,163 @@
     </div>
 
     <!-- About Me Page -->
-    <div class="about" id="aboutme">
-      <!-- Text of About Me-->
-      <div>
-        <h1>About Me</h1>
-        <p>
-          <b>I am passionate about creating value using technology.</b>
-          <br>
-          <br> I love to create
-          <a href="#projects">website and webapps</a> at work and in my spare time. I find great joy in learning and using the tools to create
-          products that bring value to an organization. To me, web development is not just a job but a
-          <b>craft</b>.
-          <br>
-          <br> At the same time, I am a believer in
-          <b>data</b> and its great potential to bring value to an organization. Data Science has been known to be a buzz term,
-          but it undeniably will be part of our future.
-          <br>
-          <br> I currently live near the Chicago area and am
-          <b>actively looking for work</b> in both Web Development and Data Science, so
-          <a href="mailto:tim.kartawijaya@gmail.com">contact me</a> for any kind of work opportunity!
-        </p>
-      </div>
-
-      <!-- My Picture -->
-      <div>
-        <img src="images/me.jpg">
-      </div>
-    </div>
-    <!-- Projects -->
-    <div class="projects" id="projects">
-      <div>
-        <h1>Projects</h1>
-       
-        <div class="project-items">
-          <div class="container-project">
-            <img src="images/rezlife.jpg" alt="Avatar">
-            <div class="content-overlay"></div>
-
-            <div class="text">
-              <h3>Pocket RA</h3>
-              <h6>January 2018 - Ongoing</h6>
-              <p>Leading a team of 7 in building a web application using MySQL, Express, Node, and JQuery that saves Dorm Staff
-                (Resident Assistant and Directors) time and effort in doing day to day tasks, from resident database management
-                to event scheduling.</p>
-              <a class="btn btn-warning" href="https://github.com/TimKartawijaya/rezlife">Source Code</a>
-            </div>
-
+    <div class="row">
+      <div class="about" id="aboutme">
+        <div class="row">
+          <!-- Text of About Me-->
+          <div class="col">
+            <h1>About Me</h1>
+            <p>
+              <b>Curious. Problem-solver. Empathetic.</b>
+              <br>
+              <br>I am a believer in
+              <b>Big Data</b> and its potential to bring about innovative products and make organizations more efficient. Data Science and Machine Learning
+              are known buzz
+              terms, but undeniably will be part of our future. I am currently pursuing a
+              <b>M.S. in Data Science</b> degree at
+              <b>Columbia University</b> to deepen my understanding in Data Science and Machine Learning.
+              <br>
+              <br> In my spare time, I participate in Kaggle competitions and create
+              <a href="#projects">websites and webapps</a> to help organizations that I believe in. I find great joy in
+              learning and using these tools to bring value to these organizations.
+              <br>
+              <br> I am currently looking for an internship for Summer 2019, so
+              <a href="mailto:tim.kartawijaya@gmail.com">contact me</a> for any kind of work opportunity. If you just want to connect and talk about tech, send me a message anyways!
+            </p>
           </div>
 
-          <div class="container-project">
-            <img src="images/cleats.jpg" alt="Avatar">
-            <div class="content-overlay"></div>
-            <div class="text">
-              <h3>WCR.com</h3>
-              <h6>February 2018 - Ongoing</h6>
-              <p>A website customized in HTML/CSS (and later built with React.js add-ons) with a product catalogue feature,
-                which allows users to browse soccer cleats accompanied with reviews/ratings from women soccer athletes, its
-                prices, and an Amazon affiliate link from which users can purchase the product.
-              </p>
-              <a class="btn btn-warning" href="https://github.com/TimKartawijaya/womenscleatreviews">Source Code</a>
-            </div>
+          <!-- My Picture -->
+          <div class="col">
+            <img src="images/me.jpg">
           </div>
-
-          <div class="container-project">
-            <img src="images/sage.jpg" alt="Avatar">
-            <div class="content-overlay"></div>
-            <div class="text">
-              <h3>SAGE Analytics</h3>
-              <h6>September - December 2017</h6>
-              <p>Automated data analysis and visualization in R for SAGE, an education software that leverages machine learning
-                to teach computer science concepts to secondary education students.</p>
-              <a class="btn btn-warning" href="https://github.com/cu-sage/scratch-analyzer">Source Code</a>
-            </div>
-          </div>
-          
-
         </div>
-
       </div>
+
     </div>
 
+    <!-- Data Science Projects -->
+    <div class="row">
+      <div class="projects data-projects full-width" id="projects">
+        <div class="row justified">
+          <h1>Data Science Projects</h1>
+        </div>
+        <div class="data-text">
+          <div class="row">
+            <div class="col">
+              <h3><a href="https://github.com/TimKartawijaya/lastfm">Last.fm Implicit Recommendation System</a></h3>
+              <p>Using collaborative filtering (neighbor/model-based) to recommend artists to users using implicit data.</p>
 
-    <!-- Resume
-  <div class="resume" id="resume">
+              <h3><a href="titanic.html"> Predicting Titanic Survivors </a></h3>
+              <p>Use sklearn to predict survivors of the Titanic. A first try in Kaggle Competitions.</p>
 
-  </div> -->
+              <h3><a href="edav.html">Visualizations with R</a></h3>
+              <p>Visualization work from STAT 5702: Exploratory Data Analysis and Visualization.</p>
+            </div>
+          </div>
+        </div>
+      
 
-    <!-- Footer -->
-    <div class="footer">
-      <!-- Copyright -->
-      <div>
-        <p>All Content &#169 Crafted by Tim Kartawijaya, 2018</p>
+        <!-- End of projects -->
+
+
+        <!-- Software Development Projects -->
+        <div class="row">
+          <div class="projects software-projects full-width" id="projects">
+
+            <div class="row justified">
+              <h1>Web and Software Projects</h1>
+            </div>
+
+            <!-- Row of projects -->
+            <div class="row">
+
+              <div class="col p-b-70">
+                <div class="project-box">
+                  <img src="images/rezlife.jpg" alt="Avatar">
+                  <div class="content-overlay">
+                    <h3>ResApp</h3>
+                    <h6>January 2018 - July 2018</h6>
+                    <p>Led a team of 7 in building a web application using MySQL, Express, Node, and JQuery that saves
+                      Dorm
+                      Staff (Resident Assistant and Directors) time and effort in doing day to day tasks, from resident
+                      database
+                      management to event scheduling.</p>
+                    <a class="btn btn-warning" href="https://github.com/TimKartawijaya/rezlife">Source Code</a>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col p-b-70">
+                <div class="project-box">
+                  <img src="images/cleats.jpg" alt="Avatar">
+                  <div class="content-overlay">
+                    <h3>WCR.com</h3>
+                    <h6>February 2018 - Ongoing</h6>
+                    <p>A website customized in HTML, CSS, and jQuery with a product
+                      catalogue feature,
+                      which allows users to browse soccer cleats accompanied with reviews/ratings from women soccer
+                      athletes,
+                      its prices, and an Amazon affiliate link from which users can purchase the product.
+                    </p>
+                    <a class="btn btn-warning" href="https://github.com/TimKartawijaya/womenscleatreviews">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col p-b-70">
+                <div class="project-box">
+                  <img src="images/sage.jpg" alt="Avatar">
+                  <div class="content-overlay">
+                    <h3>SAGE Analytics</h3>
+                    <h6>September - December 2017</h6>
+                    <p>Automated data analysis and visualization in R and Java for SAGE, an education software that leverages
+                      machine learning
+                      to teach computer science concepts to secondary education students.</p>
+                    <a class="btn btn-warning" href="https://github.com/cu-sage/scratch-analyzer">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of projects -->
+
+
+
+          </div>
+        </div>
+        <!-- Footer -->
+        <div>
+          <div class="footer-bottom row">
+            <div class="col m-auto">
+              <!-- Copyright -->
+              <div>
+                <p>All Content &#169 Tim Kartawijaya, 2018</p>
+              </div>
+            </div>
+            <div class="col m-auto">
+              <!-- Links -->
+              <div class="footer-link">
+                <p>Connect with me!
+
+                  <a href="https://www.linkedin.com/in/tim-kartawijaya-141841117/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+
+                  <a href="https://github.com/TimKartawijaya">
+                    <i class="fab fa-github"></i>
+                  </a>
+
+                  <a href="mailto:tim.kartawijaya@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Links -->
-      <div class="footer-link">
-        <p>Connect with me!
-
-          <a href="https://www.linkedin.com/in/tim-kartawijaya-141841117/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-
-          <a href="https://github.com/TimKartawijaya">
-            <i class="fab fa-github"></i>
-          </a>
-
-
-          <a href="mailto:tim.kartawijaya@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-
-        </p>
-      </div>
-    </div>
-  </div>
 
 
 </body>
