@@ -2,6 +2,11 @@ p {
   font-family: 'Lato',sans-serif;
 }
 
+.dataset {
+  color: #ffe107fa;
+}
+
+
 /* Navigation Styles*/
 nav {
   display: flex;
@@ -98,11 +103,11 @@ em{
 }
 
 .about img {
-  border-radius:10px;
-  width:250px;
-
+  /* border-radius:10px; */
+  width:400px;
   display:block;
   margin:auto;
+  padding-bottom:30px;
 }
 
 .about p{
@@ -134,8 +139,13 @@ em{
   color:rgb(128, 219, 255);
 }
 
-.data-text a:hover{
+.data-text a:hover,a:hover span{
   color:rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.data-text a:hover span{
+  color: rgb(206, 206, 206);
   text-decoration: none;
 }
 
@@ -153,9 +163,16 @@ em{
 }
 
 .software-projects h1{
-  padding:60px;
   color:rgb(56, 56, 56);
   text-align:center;
+  padding-bottom:0;
+}
+
+.software-projects-subtitle p{
+  color:rgb(56, 56, 56);
+  text-align:center;
+  margin-top:20px;
+  margin-bottom: 40px;
 }
 
 .software-projects h5{

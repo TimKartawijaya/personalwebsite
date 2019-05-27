@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tim Kartawijaya</title>
   <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/4.10.1/firebase-app.js"></script>
@@ -42,11 +42,11 @@
         <!-- Content within the Masthead -->
         <div class="text-center">
           <!-- Text within masthead -->
-          <h1>Hello, I'm Tim Kartawijaya.</h1>
-          <p>I'm an aspiring
+          <h1>Tim Kartawijaya.</h1>
+          <p>A
             <em>Data Scientist</em> with a love for
             <em>Web Development</em>.
-            <br>Let's get connected!
+            <br>Connect with me!
           </p>
 
           <!-- Link buttons -->
@@ -79,32 +79,37 @@
     <div class="row">
       <div class="about" id="aboutme">
         <div class="row">
+          <!-- My Picture -->
+          <div sclass="col d-flex align-items-center justify-content-center">
+            <img src="images/me.jpg">
+          </div>
+
+
           <!-- Text of About Me-->
           <div class="col">
             <h1>About Me</h1>
             <p>
               <b>Curious. Problem-solver. Empathetic.</b>
               <br>
-              <br>I am a believer in
-              <b>Big Data</b> and its potential to bring about innovative products and make organizations more efficient. Data Science and Machine Learning
+              <br>I am a strong believer of
+              <b>Big Data and Machine Learning</b> due its potential to bring about innovative products and make
+              organizations more efficient. Data Science and Machine Learning
               are known buzz
               terms, but undeniably will be part of our future. I am currently pursuing a
               <b>M.S. in Data Science</b> degree at
-              <b>Columbia University</b> to deepen my understanding in Data Science and Machine Learning.
+              <b>Columbia University</b> to solidify my foundation in Statistics and Machine Learning.
               <br>
-              <br> In my spare time, I participate in Kaggle competitions and create
-              <a href="#projects">websites and webapps</a> to help organizations that I believe in. I find great joy in
-              learning and using these tools to bring value to these organizations.
+              <br> When I'm not solving data science problems, I love to create
+              websites, webapps, and interactive data visualizations</a> for organizations I believe in (and sometimes
+              just for fun!).
               <br>
-              <br> I am currently looking for an internship for Summer 2019, so
-              <a href="mailto:tim.kartawijaya@gmail.com">contact me</a> for any kind of work opportunity. If you just want to connect and talk about tech, send me a message anyways!
+              <br> I am currently looking for an internship for Fall 2019 and a full-time job starting January 2020, so
+              <a href="mailto:tim.kartawijaya@gmail.com">contact me</a> for any kind of work opportunity. If you just
+              want to connect and talk about tech, send me a message too!
             </p>
           </div>
 
-          <!-- My Picture -->
-          <div class="col">
-            <img src="images/me.jpg">
-          </div>
+
         </div>
       </div>
 
@@ -114,23 +119,39 @@
     <div class="row">
       <div class="projects data-projects full-width" id="projects">
         <div class="row justified">
-          <h1>Data Science Projects</h1>
+          <h1 style="padding-bottom:0">Data Science Projects</h1>
         </div>
         <div class="data-text">
           <div class="row">
             <div class="col">
-              <h3><a href="https://github.com/timjaya/lastfm">Last.fm Implicit Recommendation System</a></h3>
-              <p>Using collaborative filtering (neighbor/model-based) to recommend artists to users using implicit data.</p>
+              <h3><a href="https://github.com/timjaya"><span class="dataset">MovieLens:</span> Predicting Ratings with
+                  Spark and Hadoop</a></h3>
+              <p>Analysis of MovieLens using Big Data tech (ongoing).</p>
 
-              <h3><a href="titanic.html"> Predicting Titanic Survivors </a></h3>
-              <p>Use sklearn to predict survivors of the Titanic. A first try in Kaggle Competitions.</p>
+              <h3><a href="https://github.com/timjaya"><span class="dataset">DL + Cancer:</span> Classifying cancerous
+                  cell images</a></h3>
+              <p>Using Neural Networks (RNN, CNN) to classify cancerous images.</p>
 
-              <h3><a href="edav.html">Visualizations with R</a></h3>
-              <p>Visualization work from STAT 5702: Exploratory Data Analysis and Visualization.</p>
+              <h3><a href="https://github.com/timjaya"><span class="dataset">r/science:</span> Troll detection</a></h3>
+              <p>Using NLP techniques to classify Reddit trolls from comment content.</p>
+
+              <h3><a href="https://github.com/timjaya/lastfm"><span class="dataset">NYC 311:</span> How well does the
+                  NYPD respond to 311 calls?</a></h3>
+              <p>Visualizing and discovering patterns of NYPD response to 311 calls using ggplot and D3.js.</p>
+
+              <h3><a href="https://github.com/timjaya/lastfm"><span class="dataset">Last.fm:</span> Recommending Top-K
+                  Artists</a></h3>
+              <p>Using ALS and FFM models to recommend artists to users using implicit historical data. </p>
+
+              <h3><a href="titanic.html"><span class="dataset">Titanic:</span> Who will survive?</a></h3>
+              <p>Predicting Titanic survivors using sklearn. A first try in Kaggle Competitions!</p>
+
+              <!-- <h3><a href="edav.html">Visualizations with R</a></h3>
+              <p>Visualization work from STAT 5702: Exploratory Data Analysis and Visualization.</p> -->
             </div>
           </div>
         </div>
-      
+
 
         <!-- End of projects -->
 
@@ -140,7 +161,12 @@
           <div class="projects software-projects full-width" id="projects">
 
             <div class="row justified">
-              <h1>Web and Software Projects</h1>
+                  <h1>Web and Software Projects</h1>
+                  
+            </div>
+            <div class="row justified software-projects-subtitle">
+                <p>(Hover to view!)</p>
+                
             </div>
 
             <!-- Row of projects -->
@@ -148,11 +174,38 @@
 
               <div class="col p-b-70">
                 <div class="project-box">
+                  <img src="images/nbadash.png" alt="Avatar">
+                  <div class="content-overlay">
+                    <h3>NBA Dash</h3>
+                    <h6>March 2019 - May 2019</h6>
+                    <p>A Flask Web App consisting of a variety tools which assist users in making decisions to modify their NBA Fantasy roster by providing up-to-date NBA Fantasy statistics.</p>
+                    <a class="btn btn-warning" href="https://github.com/timjaya/nbadash">Source Code</a>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col p-b-70">
+                <div class="project-box">
+                  <img src="images/nypd.png" alt="Avatar">
+                  <div class="content-overlay">
+                    <h3>NYC 311: D3 App</h3>
+                    <h6>November 2018</h6>
+                    <p>A D3.js interactive tool to help users visualizate both spatial and chronological patterns on how 311 calls are received by hour.
+                    </p>
+                    <a class="btn btn-warning" href="http://bl.ocks.org/timjaya/raw/51d9b98c51df778c50ba2d7d38bf7c57">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col p-b-70">
+                <div class="project-box">
                   <img src="images/rezlife.jpg" alt="Avatar">
                   <div class="content-overlay">
                     <h3>ResApp</h3>
                     <h6>January 2018 - July 2018</h6>
-                    <p>Led a team of 7 in building a web application using MySQL, Express, Node, and JQuery that saves
+                    <p>Led a team of 7 in building a web app (MySQL, Node.js and JQuery) that saves
                       Dorm
                       Staff (Resident Assistant and Directors) time and effort in doing day to day tasks, from resident
                       database
@@ -164,12 +217,14 @@
 
               </div>
 
+
+
               <div class="col p-b-70">
                 <div class="project-box">
                   <img src="images/cleats.jpg" alt="Avatar">
                   <div class="content-overlay">
                     <h3>WCR.com</h3>
-                    <h6>February 2018 - Ongoing</h6>
+                    <h6>February 2018 - May 2018 (Onhold)</h6>
                     <p>A website customized in HTML, CSS, and jQuery with a product
                       catalogue feature,
                       which allows users to browse soccer cleats accompanied with reviews/ratings from women soccer
@@ -187,13 +242,16 @@
                   <div class="content-overlay">
                     <h3>SAGE Analytics</h3>
                     <h6>September - December 2017</h6>
-                    <p>Automated data analysis and visualization in R and Java for SAGE, an education software that leverages
+                    <p>Automated data analysis and visualization in R and Java for SAGE, an education software that
+                      leverages
                       machine learning
                       to teach computer science concepts to secondary education students.</p>
                     <a class="btn btn-warning" href="https://github.com/cu-sage/scratch-analyzer">Source Code</a>
                   </div>
                 </div>
               </div>
+
+
             </div>
             <!-- End of projects -->
 
@@ -237,10 +295,10 @@
 
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/home.js"></script>
 
 </html>
